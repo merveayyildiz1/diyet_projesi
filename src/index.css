@@ -1,0 +1,47 @@
+/* src/index.css */
+
+:root {
+  --primary-green: rgb(125, 153, 92);  /* AppBar/Button rengi */
+  --light-green: rgb(193, 211, 165); /* Kart/Nav rengi */
+  --dark-text: rgb(73, 72, 72);       /* Seçilmemiş ikon rengi */
+  --page-background: #ffffff;      /* Arka plan */
+}
+
+/* Sayfanın varsayılan (body) ayarları */
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--page-background);
+  color: var(--dark-text); /* Varsayılan metin rengi */
+}
+
+/* Tüm linklerin (<a> etiketleri) varsayılan stilini düzeltelim */
+a {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tüm butonların varsayılan stilini temamıza uygun hale getirelim */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-green); /* Ana yeşil renk */
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  opacity: 0.9;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
